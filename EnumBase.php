@@ -12,7 +12,7 @@
  * @author liyunfang <381296986@qq.com>
  * @date 2015-01-23
  */
-class EnumBase {
+abstract class EnumBase {
     //protected static $names = array();
     /**
      * 验证合法性
