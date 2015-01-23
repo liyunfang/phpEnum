@@ -2,12 +2,12 @@
 PHP enumeration helper classes
 
 
-1、Increased EnumBase a class inheritance
+1、Increased EnumBase a class inheritance  
 
-class EnumUserStatus extends EnumBase{
-    const INACTIVE = 0;
-    const ACTIVE   = 1;
-    const DELETED  = 2;
+class EnumUserStatus extends EnumBase{  
+    const INACTIVE = 0;  
+    const ACTIVE   = 1;  
+    const DELETED  = 2;  
     
     protected static $names = array(
         self::INACTIVE => '不活跃',
@@ -16,13 +16,13 @@ class EnumUserStatus extends EnumBase{
     );
 }
 
-2、How to use
+2、How to use  
 
-  $active = EnumUserStatus::ACTIVE;
-  $activename = EnumUserStatus::getName($active);
- 
-  var_dump($active);
-  var_dump($activename);
-  exit();
+  $active = EnumUserStatus::ACTIVE;  
+  $activename = EnumUserStatus::getName($active);  
+  
+  var_dump($active);  
+  var_dump($activename);  
+  exit();  
 
 
