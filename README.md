@@ -3,8 +3,8 @@ PHP enumeration helper classes
 
 
 1、Increased EnumBase a class inheritance  
-
-class EnumUserStatus extends EnumBase{  
+//建议每张表一个类    
+class EnumUser extends EnumBase{  
     const STATUS = 'status';    
     const INACTIVE = 0;  
     const ACTIVE   = 1;  
@@ -19,8 +19,8 @@ class EnumUserStatus extends EnumBase{
 
 2、How to use  
 
-  $active = EnumUserStatus::ACTIVE;  
-  $activename = EnumUserStatus::getName($active,EnumUserStatus::STATUS);  
+  $active = EnumUser::ACTIVE;  
+  $activename = EnumUser::getName($active,EnumUser::STATUS);  
   
   var_dump($active);  
   var_dump($activename);  
